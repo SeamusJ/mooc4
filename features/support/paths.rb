@@ -16,6 +16,8 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/movies'
 
+    when /^the (RottenPotatoes )?home\s?page$/ then '/movies'
+
     when /^the edit page for \"(.*)\"$/
       #"/movies/#{Movie.find_by_title($1).id}/edit"
       edit_movie_path(Movie.find_by_title($1))
