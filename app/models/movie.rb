@@ -3,6 +3,7 @@ class Movie < ActiveRecord::Base
     %w(G PG PG-13 NC-17 R)
   end
 
-  def self.similar(id)
+  def self.similar(director)
+    self.find_all_by_director(director)
   end
 end

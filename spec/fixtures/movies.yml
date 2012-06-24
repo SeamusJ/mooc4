@@ -1,0 +1,14 @@
+# spec/fixtures/movies.yml
+# Fixtures for model unit tests.
+milk_movie:
+  id: 1
+  title: Milk
+  rating: R
+  release_date: 2008-11-26
+  director: sumbody!
+
+superbad:
+  id: 2
+  title: Superbad
+  rating: PG-13
+  release_date: 2002-10-10
